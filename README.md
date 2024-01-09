@@ -1,9 +1,9 @@
-# PkmnRTM
-![alt text](https://github.com/meltyfruits/PkmnRTM/blob/main/pkmnrtm_homescreen.png?raw=true)
+# <p align="center">PkmnRTM</p>
+![alt text](https://github.com/meltyfruits/PkmnRTM/blob/main/images/pkmnrtm_homescreen.png?raw=true)
 
-[Pokémon Readable Type Matchups](https://mintyfruits.github.io/PkmnRTM/)
+<p align="center"><a href="https://mintyfruits.github.io/PkmnRTM/" target=_blank>Pokémon Readable Type Matchups</a> </p>
 
-A simple tool that quickly shows what typing is super effective against another given type (e.g., Water > Fire). Because I'm lazy. :sweat_smile:
+<p align="center">A simple tool that quickly shows what typing is super effective against another given type (e.g., Water > Fire). Because I'm lazy. :sweat_smile: </p>
 
 # To do
 * [x] Finish type matchups
