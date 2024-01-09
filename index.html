@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="js/types.js"></script> 
+</head>
+
+<div>
+  <table id="typeTable">
+    <thead>
+      <tr>
+        <th class="ex1" colspan="6">Pokémon Readable Type Matchups</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/NormalIC.png" class="center" onclick="normalType()" /></td>
+        <td><input type="image" src="icons/IC/FireIC.png" class="center" onclick="fireType()" /></td>
+        <td><input type="image" src="icons/IC/WaterIC.png" class="center" onclick="waterType()" /></td>
+        <td><input type="image" src="icons/IC/ElectricIC.png" class="center" onclick="electricType()" /></td>
+        <td><input type="image" src="icons/IC/GrassIC.png" class="center" onclick="grassType()" /></td>
+        <td><input type="image" src="icons/IC/IceIC.png" class="center" onclick="iceType()" /></td>
+      </tr>
+      <tr>
+        <td><input type="image" src="icons/IC/FightingIC.png" class="center" onclick="fightingType()" /></td>
+        <td><input type="image" src="icons/IC/PoisonIC.png" class="center" onclick="poisonType()" /></td>
+        <td><input type="image" src="icons/IC/GroundIC.png" class="center" onclick="groundType()" /></td>
+        <td><input type="image" src="icons/IC/FlyingIC.png" class="center" onclick="flyingType()" /></td>
+        <td><input type="image" src="icons/IC/PsychicIC.png" class="center" onclick="psychicType()" /></td>
+        <td><input type="image" src="icons/IC/BugIC.png" class="center" onclick="bugType()" /></td>
+      </tr>
+      <tr>
+        <td><input type="image" src="icons/IC/RockIC.png" class="center" onclick="rockType()" /></td>
+        <td><input type="image" src="icons/IC/GhostIC.png" class="center" onclick="ghostType()" /></td>
+        <td><input type="image" src="icons/IC/DragonIC.png" class="center" onclick="dragonType()" /></td>
+        <td><input type="image" src="icons/IC/DarkIC.png" class="center" onclick="darkType()" /></td>
+        <td><input type="image" src="icons/IC/SteelIC.png" class="center" onclick="steelType()" /></td>
+        <td><input type="image" src="icons/IC/FairyIC.png" class="center" onclick="fairyType()" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="normal">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Normal is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/FightingIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="fire">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Fire is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/WaterIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/GroundIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/RockIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="water">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Water is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/ElectricIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/GrassIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="electric">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Electric is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/GroundIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="grass">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Grass is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/FireIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/IceIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/PoisonIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/BugIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="ice">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Ice is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/FireIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/FightingIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/RockIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/SteelIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="fighting">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Fighting is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/FlyingIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/PsychicIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/FairyIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="poison">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Poison is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/GroundIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/PsychicIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="ground">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Ground is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/WaterIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/GrassIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/IceIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="flying">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Flying is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/ElectricIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/IceIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/RockIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="psychic">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Psychic is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/BugIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/GhostIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/DarkIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="bug">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Bug is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/FireIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/FlyingIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/RockIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="rock">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Rock is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/WaterIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/GrassIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/FightingIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/GroundIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/SteelIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="ghost">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Ghost is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/GhostIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/DarkIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="dragon">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Dragon is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/IceIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/DragonIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/FairyIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="dark">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Dark is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/FightingIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/BugIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/FairyIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="steel">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Steel is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/FireIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/GroundIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="fairy">
+  <table>
+    <thead>
+      <tr>
+        <th class="ex2" colspan="6">Fairy is weak against</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="image" src="icons/IC/PoisonIC.png" class="center" onclick="reset()"></input></td>
+        <td><input type="image" src="icons/IC/SteelIC.png" class="center" onclick="reset()"></input></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+<div id="chg">
+  <p>&nbsp &nbsp12/2023 v0.1 – Type matchups complete (2x damage)</p>
+</div>
